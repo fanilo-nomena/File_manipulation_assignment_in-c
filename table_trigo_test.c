@@ -9,6 +9,6 @@ int main(){
     test_ficher(f);
     generer_table_trigo(f);
     fermer_fichier(f);
-    lire_ficher();
+    //lire_ficher();
     return 0;
 }

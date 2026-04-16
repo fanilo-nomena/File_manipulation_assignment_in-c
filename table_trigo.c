@@ -23,7 +23,7 @@ bool test_ficher(FILE *f)
 
 void generer_table_trigo(FILE *f){
     int i;
-    fprintf(f, "Angle\tSin\tCos\tTan\n");
+    fprintf(f, "Angle;Sin;Cos;Tan\n");
 
     for (i =0; i<=360; i++){
         double radian, valeur_sin, valeur_cos, valeur_tan;
@@ -36,7 +36,7 @@ void generer_table_trigo(FILE *f){
          valeur_sin = sin(radian);
          valeur_cos = cos(radian);
          valeur_tan = tan(radian);  
-            fprintf(f, "%d\t%.2f\t%.2f\t%.2f\n", i, valeur_sin, valeur_cos, valeur_tan);
+            fprintf(f, "%d;%.2f;%.2f;%.2f\n", i, valeur_sin, valeur_cos, valeur_tan);
     } 
 }
 
